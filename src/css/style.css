@@ -1,0 +1,151 @@
+body {
+    font-family: "poppins", sans-serif;
+    background-image: url(../imagens/background.png);
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    backdrop-filter: blur(8px);
+}
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+.cachorros {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+.cartao-cachorros {
+    display: none;
+    max-width: 360px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cartao-cachorros.aberto {
+    display: block;
+}
+.cartao-cachorros img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+.cartao-cachorros .cartao-topo {
+    padding: 30px 40px 0;
+}
+.cartao-cachorros .nome {
+    margin-bottom: 5px;
+}
+.cartao-cachorros .pais {
+    background-color: #ffffff;
+    font-size: 12px;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+.cartao-cachorros .detalhes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cartao-cachorros .cartao-informacoes {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.cartao-cachorros .cartao-informacoes h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #3e454d;
+}
+.cartao-cachorros .cartao-informacoes .descricao {
+    padding: 0 10px;
+    font-size: 15px;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+.raca-york {
+    background-color: #c37aff;
+}
+
+.raca-corgi {
+    background-color: #5cfff7d2;
+}
+
+.raca-salsicha {
+    background-color: #ffe433;
+}
+
+.raca-shihtzu {
+    background-color: #c749d0;
+}
+
+.raca-pug {
+    background-color: #9ffc8f;
+}
+
+.raca-schnauzer {
+    background-color: #f86450;
+}
+.listagem {
+    max-width: 200px;
+}
+.listagem .cao img{
+    width: 25%;
+}
+.listagem .cao {
+    background-color: #8dc2ff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 70px;
+
+    transition: 0.15 ease-in-out;
+}
+.listagem .cao:hover {
+    transform: scale(1.05);
+}
+.listagem .cao span {
+    padding-right: 20px;
+}
+.listagem .cao.ativo {
+    background-color: #0091ff;
+}
+
+@media (max-width: 1280px) {
+    body {
+    padding: 0 40px;
+    background: linear-gradient(120deg, rgb(235, 206, 255) 10%, rgb(200, 164, 255) 50%, rgb(184, 124, 252) 90%);
+    }
+}
