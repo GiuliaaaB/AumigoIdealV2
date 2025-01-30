@@ -2,6 +2,8 @@
 
  Com um design moderno e intuitivo, em formato de cards, a plataforma oferece informações sobre algumas raças caninas tornando a busca pelo companheiro ideal mais fácil e divertida. 😁
 
+ aumigo-ideal-v2.vercel.app
+
 *Destaques:*
 
 * *Interface intuitiva:* Design clean e organizado em cards, facilitando a navegação e a comparação entre as raças.
